@@ -5,7 +5,7 @@
    so an older worker never stores a newer page (or the reverse) and the update bar cannot loop.
    v3.6.26 (external audit R3625-03): the cache name carries the app and its web folder (scope); this worker reads only its own cache
    and deletes only older TAWAL checklist caches of the same folder, never caches of other apps or of another TAWAL folder. */
-var CACHE='tawal-ho-327cfc51';
+var CACHE='tawal-ho-bc97c967';
 var BUILD=CACHE.slice(9);
 var SCOPE=new URL(self.registration.scope).pathname;
 var NAME=CACHE+'@'+SCOPE;
